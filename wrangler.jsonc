@@ -10,6 +10,9 @@
 	"observability": {
 		"enabled": true
 	},
+	"routes": [
+    "tunnel.someone.sg/secure/*"
+  ],
 	"r2_buckets": [
     {
       "binding": "FLAG_BUCKET",
