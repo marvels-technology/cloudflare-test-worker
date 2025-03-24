@@ -41,7 +41,7 @@ async function handleSecureRequest(request: Request): Promise<Response> {
 
 async function handleFlagRequest(country: string, env: any): Promise<Response> {
   try {
-    const object = await env.FLAG_BUCKET.get(`${country}.svg`);
+    const object = await env.FLAG_BUCKET.get(`${country.toLowerCase()}.svg`);
     if (!object) {
       return new Response("Flag not found", { status: 404 });
     }
