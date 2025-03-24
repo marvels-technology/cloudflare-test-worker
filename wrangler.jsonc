@@ -11,6 +11,7 @@
 		"enabled": true
 	},
 	"routes": [
+		"tunnel.someone.sg/secure",
     "tunnel.someone.sg/secure/*"
   ],
 	"r2_buckets": [
